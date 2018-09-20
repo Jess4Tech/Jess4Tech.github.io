@@ -1,7 +1,7 @@
 <html>
 <head>
 <script type="text/javascript">
-function showUser(str)
+<!--function showUser(str)
 {
 if (str=="")
   {
@@ -25,22 +25,19 @@ xmlhttp.onreadystatechange=function()
   }
 xmlhttp.open("GET","getuser.php?q="+str,true)
 xmlhttp.send();
-}
+}--!>
 </script>
 </head>
 <body>
 
 <form>
-<select name="users" onchange="showUser(this.value)">
+<select name="Doing">
 <option value="">Select a person:</option>
-<option value="1">Peter Griffin</option>
-<option value="2">Lois Griffin</option>
-<option value="3">Glenn Quagmire</option>
-<option value="4">Joseph Swanson</option>
+<option value="1">Checking out</option>
+<option value="2">Returning</option>
 </select>
 </form>
 <br />
-<div id="txtHint"><b>Person info will be listed here.</b></div>
 
 </body>
 </html>
