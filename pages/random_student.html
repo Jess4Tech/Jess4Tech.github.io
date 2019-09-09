@@ -23,13 +23,13 @@
 	</head>
 	
 	<body>
-		<button onclick="8()">8th Grade</button>
+		<button onclick="gradeEight()">8th Grade</button>
 		<p>List will appear below this</p>
 		<ol id="ol">
 		</ol>
 	</body>
 	<script type="text/javascript">
-    	function 8 () {
+    	function gradeEight () {
         	var students = ["Jess Buetow", "Ethan Butler", "Eli Bieber"];
 		let arrayLength = students.length;
 		for (var i = 0; i < arrayLength; i++) {
@@ -38,5 +38,5 @@
   			node.appendChild(textnode);
   			document.getElementById("ol").appendChild(node);
 		}
-	</script>
+    	};
 </html>
