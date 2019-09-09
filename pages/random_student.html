@@ -23,8 +23,20 @@
 	</head>
 	
 	<body>
-		<button type="button" Id="8">8th Grade</button>
+		<button onclick="8()">8th Grade</button>
 		<p>List will appear below this</p>
+		<ol id="ol">
+		</ol>
 	</body>
-	
+	<script type="text/javascript">
+    	function 8 () {
+        	var students = ["Jess Buetow", "Ethan Butler", "Eli Bieber"];
+		let arrayLength = students.length;
+		for (var i = 0; i < arrayLength; i++) {
+    			var node = document.createElement("LI");
+  			var textnode = document.createTextNode(students[i]);
+  			node.appendChild(textnode);
+  			document.getElementById("ol").appendChild(node);
+		}
+	</script>
 </html>
