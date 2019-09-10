@@ -9,6 +9,7 @@
 	<body>
         <button id="eight">8th Grade</button>
 	<button id="seven">7th Grade</button>
+	<button id="six">6th Grade</button>
         <p>List</p>
         <ol id="ol"></ol>
         <footer>
@@ -29,7 +30,36 @@
             students.splice(v,1);
           }
     	}
+	
+	function gradeSeven() {
+            document.getElementById("ol").innerHTML = "";
+	    var students7 = ["Grace", "Kiley", "Matthew", "Alex", "Celeste", "Brooke", "Noah", "Will", "Emily", "Joe"];
+            var arrayLength = students7.length;
+	    for (var i = 0; i < arrayLength; i++) {
+            var v = Math.floor(Math.random() * students7.length);
+            var entry = document.createElement("li");
+            entry.appendChild(document.createTextNode(students7[v]));
+            list.appendChild(entry);
+            students7.splice(v,1);
+          }
+    	}
+	
+	function gradeSis() {
+            document.getElementById("ol").innerHTML = "";
+	    var students6 = ["Gabe", "Lila", "Addie", "Jasdeep", "Amaris", "Jayden", "Zara", "Jack", "Colt", "Ava", "Jeremiah", "Trevor", "Ana", "Sam", "Dylan", "Leah", "Allie", "Frannie", "Neil", "Gabi"];
+            var arrayLength = students7.length;
+	    for (var i = 0; i < arrayLength; i++) {
+            var v = Math.floor(Math.random() * students6.length);
+            var entry = document.createElement("li");
+            entry.appendChild(document.createTextNode(students6[v]));
+            list.appendChild(entry);
+            students6.splice(v,1);
+          }
+    	}
+	
         document.getElementById("eight").addEventListener("click", gradeEight);
+	document.getElementById("seven").addEventListener("click", gradeSeven);
+	document.getElementById("six").addEventListener("click", gradeSix);
         document.getElementById("copyright").style.color = "#bbc1c9";
     </script>
 </html>
