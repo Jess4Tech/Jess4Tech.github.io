@@ -20,7 +20,7 @@
     	function gradeEight() {
             document.getElementById("ol").innerHTML = "";
         	var students = ["Jess Buetow", "Ethan Butler", "Eli Beiber", "Claudia Delong", "Jamie Eppinga", "Shane Darling", "Caleb Schoenmeyer", "Cameron Jolin", "Carter Rauschert", "Cloe Wollenweber", "Donny Yeager", "Elijah Wolter", "Ella Holzhei", "Hailie Kwiatkowski", "Isiah Hayes", "Jack LaDouce", "John Palmer", "MJ Yeager", "Preston Kelsey", "Timothy Plamondon", "Tyler Ryll"];
-            for (var i = 0; i < students.length*1000; i++) {
+            for (var i = 0; i <= students.length; i++) {
                 var v = Math.floor(Math.random() * students.length);
                 var entry = document.createElement("li");
                 entry.appendChild(document.createTextNode(students[v]));
