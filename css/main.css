@@ -41,3 +41,18 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    }
+    
+.button:hover {
+        background-color: #b1c6b1;
+    }
+			
