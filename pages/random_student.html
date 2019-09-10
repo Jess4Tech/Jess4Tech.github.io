@@ -1,81 +1,80 @@
-<!DOCTYPE html >
-    <html>
-    <head>
-    <title> Random Student Chooser </title>
-    <meta charset = "UTF-8">
-    <link rel = "stylesheet" type = "text/css" href = "/css/main.css" >
-    </head>
-    <body>
-<button id = "es" > 8 th & 7 th Grade < /button> 
-<button id = "eight" > 8 th Grade < /button> 
-<button id = "seven" > 7 th Grade < /button> 
-<button id = "six" > 6 th Grade < /button>
-<p> List </p>
-<ol id = "ol" > </ol> <
-footer >
-    <
-    p id = "copyright" > Student - Gen© by Jess Buetow < /p> < /
-footer > <
-    /body> <
-script type = "text/javascript" >
-    var list = document.getElementById("ol");
 
-function gradeES() {
-    document.getElementById("ol").innerHTML = "";
-    var students78 = ["Jess Buetow", "Ethan Butler", "Eli Beiber", "Claudia Delong", "Jamie Eppinga", "Shane Darling", "Caleb Schoenmeyer", "Cameron Jolin", "Carter Rauschert", "Cloe Wollenweber", "Donny Yeager", "Elijah Wolter", "Ella Holzhei", "Hailie Kwiatkowski", "Isiah Hayes", "Jack LaDouce", "John Palmer", "MJ Yeager", "Preston Kelsey", "Timothy Plamondon", "Tyler Ryll", "Grace", "Kiley", "Matthew", "Alex", "Celeste", "Brooke", "Noah", "Will", "Emily", "Joe", "Deseanna"];
-    var arrayLength = students78.length;
-    for (var i = 0; i < arrayLength; i++) {
-        var v = Math.floor(Math.random() * students78.length);
-        var entry = document.createElement("li");
-        entry.appendChild(document.createTextNode(students78[v]));
-        list.appendChild(entry);
-        students78.splice(v, 1);
-    }
-}
-
-function gradeEight() {
-    document.getElementById("ol").innerHTML = "";
-    var students = ["Jess Buetow", "Ethan Butler", "Eli Beiber", "Claudia Delong", "Jamie Eppinga", "Shane Darling", "Caleb Schoenmeyer", "Cameron Jolin", "Carter Rauschert", "Cloe Wollenweber", "Donny Yeager", "Elijah Wolter", "Ella Holzhei", "Hailie Kwiatkowski", "Isiah Hayes", "Jack LaDouce", "John Palmer", "MJ Yeager", "Preston Kelsey", "Timothy Plamondon", "Tyler Ryll"];
-    var arrayLength = students.length;
-    for (var i = 0; i < arrayLength; i++) {
-        var v = Math.floor(Math.random() * students.length);
-        var entry = document.createElement("li");
-        entry.appendChild(document.createTextNode(students[v]));
-        list.appendChild(entry);
-        students.splice(v, 1);
-    }
-}
-
-function gradeSeven() {
-    document.getElementById("ol").innerHTML = "";
-    var students7 = ["Grace", "Kiley", "Matthew", "Alex", "Celeste", "Brooke", "Noah", "Will", "Emily", "Joe", "Deseanna"];
-    var arrayLength = students7.length;
-    for (var i = 0; i < arrayLength; i++) {
-        var v = Math.floor(Math.random() * students7.length);
-        var entry = document.createElement("li");
-        entry.appendChild(document.createTextNode(students7[v]));
-        list.appendChild(entry);
-        students7.splice(v, 1);
-    }
-}
-
-function gradeSix() {
-    document.getElementById("ol").innerHTML = "";
-    var students6 = ["Gabe", "Lila", "Addie", "Jasdeep", "Amaris", "Jayden", "Zara", "Jack", "Colt", "Ava", "Jeremiah", "Trevor", "Ana", "Sam", "Dylan", "Leah", "Allie", "Frannie", "Neil", "Gabi", "Da'mareus"];
-    var arrayLength = students6.length;
-    for (var i = 0; i < arrayLength; i++) {
-        var v = Math.floor(Math.random() * students6.length);
-        var entry = document.createElement("li");
-        entry.appendChild(document.createTextNode(students6[v]));
-        list.appendChild(entry);
-        students6.splice(v, 1);
-    }
-}
-
-document.getElementById("eight").addEventListener("click", gradeEight);
-document.getElementById("seven").addEventListener("click", gradeSeven);
-document.getElementById("six").addEventListener("click", gradeSix);
-document.getElementById("es").addEventListener("click", gradeES);
-document.getElementById("copyright").style.color = "#bbc1c9"; 
-</script> 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Random Student Chooser</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
+	
+	<body>
+	<button id="es">8th & 7th Grade</button>
+        <button id="eight">8th Grade</button>
+	<button id="seven">7th Grade</button>
+	<button id="six">6th Grade</button>
+        <p>List</p>
+        <ol id="ol"></ol>
+        <footer>
+        <p id="copyright">Student-Gen© by Jess Buetow</p>
+        </footer>
+	</body>
+	<script type="text/javascript">
+        var list = document.getElementById("ol");
+	    function gradeES() {
+		    document.getElementById("ol").innerHTML = "";
+		    var students78 = ["Jess Buetow", "Ethan Butler", "Eli Beiber", "Claudia Delong", "Jamie Eppinga", "Shane Darling", "Caleb Schoenmeyer", "Cameron Jolin", "Carter Rauschert", "Cloe Wollenweber", "Donny Yeager", "Elijah Wolter", "Ella Holzhei", "Hailie Kwiatkowski", "Isiah Hayes", "Jack LaDouce", "John Palmer", "MJ Yeager", "Preston Kelsey", "Timothy Plamondon", "Tyler Ryll", "Grace", "Kiley", "Matthew", "Alex", "Celeste", "Brooke", "Noah", "Will", "Emily", "Joe", "Deseanna"];
+		  var arrayLength = students78.length;
+	    for (var i = 0; i < arrayLength; i++) {
+            var v = Math.floor(Math.random() * students78.length);
+            var entry = document.createElement("li");
+            entry.appendChild(document.createTextNode(students78[v]));
+            list.appendChild(entry);
+            students78.splice(v,1);
+	      }
+      }
+    	function gradeEight() {
+            document.getElementById("ol").innerHTML = "";
+	    var students = ["Jess Buetow", "Ethan Butler", "Eli Beiber", "Claudia Delong", "Jamie Eppinga", "Shane Darling", "Caleb Schoenmeyer", "Cameron Jolin", "Carter Rauschert", "Cloe Wollenweber", "Donny Yeager", "Elijah Wolter", "Ella Holzhei", "Hailie Kwiatkowski", "Isiah Hayes", "Jack LaDouce", "John Palmer", "MJ Yeager", "Preston Kelsey", "Timothy Plamondon", "Tyler Ryll"];
+            var arrayLength = students.length;
+	    for (var i = 0; i < arrayLength; i++) {
+            var v = Math.floor(Math.random() * students.length);
+            var entry = document.createElement("li");
+            entry.appendChild(document.createTextNode(students[v]));
+            list.appendChild(entry);
+            students.splice(v,1);
+          }
+    	}
+	
+	function gradeSeven() {
+            document.getElementById("ol").innerHTML = "";
+	    var students7 = ["Grace", "Kiley", "Matthew", "Alex", "Celeste", "Brooke", "Noah", "Will", "Emily", "Joe", "Deseanna"];
+            var arrayLength = students7.length;
+	    for (var i = 0; i < arrayLength; i++) {
+            var v = Math.floor(Math.random() * students7.length);
+            var entry = document.createElement("li");
+            entry.appendChild(document.createTextNode(students7[v]));
+            list.appendChild(entry);
+            students7.splice(v,1);
+          }
+    	}
+	
+	function gradeSix() {
+      document.getElementById("ol").innerHTML = "";
+	    var students6 = ["Gabe", "Lila", "Addie", "Jasdeep", "Amaris", "Jayden", "Zara", "Jack", "Colt", "Ava", "Jeremiah", "Trevor", "Ana", "Sam", "Dylan", "Leah", "Allie", "Frannie", "Neil", "Gabi", "Da'mareus"];
+      var arrayLength = students6.length;
+	    for (var i = 0; i < arrayLength; i++) {
+            var v = Math.floor(Math.random() * students6.length);
+            var entry = document.createElement("li");
+            entry.appendChild(document.createTextNode(students6[v]));
+            list.appendChild(entry);
+            students6.splice(v,1);
+      }
+  }
+	
+      document.getElementById("eight").addEventListener("click", gradeEight);
+	    document.getElementById("seven").addEventListener("click", gradeSeven);
+	    document.getElementById("six").addEventListener("click", gradeSix);
+	    document.getElementById("es").addEventListener("click", gradeES);
+      document.getElementById("copyright").style.color = "#bbc1c9";
+    </script>
 </html>
