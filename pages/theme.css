@@ -1,0 +1,31 @@
+body {
+    background-color: lightgray;
+}
+
+.header {
+    border-bottom: 2px solid black;
+}
+
+.tool1 {
+    position: fixed;
+    left: 200px;
+    border: 2px solid darkgrey; 
+}
+
+label, p {
+    font: 20px comic-sans;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    position: fixed;
+    right: 700px;
+}
+
+.tool2 {
+    position: fixed;
+    right: 400px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unit Tools</title>
+        <meta charset-"UTF-8">
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        <script src="calculator.js"></script>
+    </head>
+    <body>
+    <div id="left">
+        <div class="header">
+            <header>
+                <h1>Unit Calculator</h1>
+            </header>
+        </div>
+
+        <div>
+            <br />
+            <label>Cost of Unit :</label> <input type="text" id="cost" class="tool1"> <br />
+            <br />
+            <label>Unit Name :</label> <input type="text" id="name" class="tool1"> <br />
+            <br />
+            <label>Budget :</label> <input type="text" id="budget" class="tool1"> <br />
+            <br />
+            <button onclick="submitOne()">Calculate</button>
+        </div>
+
+        <div id="results">
+            <h1> <strong>Previous Results</strong> </h1>
+        </div>
+    </div>
+    <div id="right">
+        <div class="header">
+            <h1>Cost Calculator</h1>
+        </div>
+
+        <div>
+            <br />
+            <label>Amount of Unit: </label> <input type="text" id="amt" class="tool2"> <br />
+            <br />
+            <label>Cost of Unit: </label> <input type="text" id="cost2" class="tool2"> <br />
+            <br />
+            <label>Unit Name: </label> <input type="text" id="name2" class="tool2"> <br />
+            <br />
+            <label>Current Balance: </label> <input type="text" id="bal" class="tool2"> <br />
+            <br />
+            <button onclick="submitTwo()">Calculate</button>
+        </div>
+
+        <div id="results2">
+            <h1>Results</h1>
+        </div>
+    </div>
+    </body>
+</html>
